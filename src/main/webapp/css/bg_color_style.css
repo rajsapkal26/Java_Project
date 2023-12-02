@@ -1,0 +1,28 @@
+:root{
+  --bg-black-900: #525050;
+  
+    /*--bg-black-900: #C9D1D3;*/
+
+ /* --bg-black-900: #E4DCEF;*/
+ 
+  /*--bg-black-900: #DDBC89;*/
+  
+  /*--bg-black-900: #000000;*/
+  
+  
+  }
+  
+  body{
+	  
+	  
+	 /* background-image: url(../Company_info/images/illustration/slider-bg-1-1.png);*/
+	  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(../Company_info/images/illustration/inner-banner-1.jpg);
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  
+	  
+	  
+	  /*background-color: var(--bg-black-900);*/
+  }

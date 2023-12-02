@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.bg_color{
+  background-color: #100a27;
+}
+
+/* Nav Start */
+
+.brand_logo{
+  height: 40px;
+  width: 120px;
+
+}
+
+.login_buttons{
+  column-gap: 20px;
+}
+
+/* Nav Ends */
+
+
+/* Home Section Start */
+
+/* Hero Section Start */
+
+.hero_img{
+  background-image: url(../images/illustration/slider-bg-1-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero_content{
+  height: 90vh;
+}
+
+/* Hero Section End */
+
+.bg-img{
+  background-image: url(../images/illustration/service-bg-1-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.figure img{
+  height: 100px;
+  width: 100px;
+}
+
+
+
+.figure_div{
+ 
+  position: relative;
+  padding: 25px;
+  transition: all 0.4s;
+  
+}
+
+.figure_div-1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: #646fd4;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.figure_div-1:hover:before{
+  height: 100%;
+} 
+
+.figure_div:hover{
+  color: white;
+}
+
+
+.arrow{
+  position: absolute;
+  bottom: -7%;
+  left: 46%;
+  background-color: aqua;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.arrow i{
+  font-size: 20px;
+} 
+
+.footer_social_media_ul{
+  list-style: none;
+}
+
+.footer_social_media_ul li a i{
+  transition: all ease 0.4s;
+}
+
+.footer_social_media_ul li a i:hover{
+  color: aliceblue;
+}
+
+
+.bullet {
+  list-style: none; 
+}
+
+.bullet li::before {
+  content: "\2022";  
+  color: #65caf1; 
+  font-size: 20px;
+  font-weight: bolder;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+
+/* video Play btn Animation start */
+
+.play-btn{
+  position: absolute;
+  left: -5%;
+  bottom: 17%;
+  background-color: #65caf1;
+  padding: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.play-btn::before{
+  content: "";
+  position: absolute;
+  border: 10px solid #dbf5ff;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  animation: bloom1 1.5s linear infinite;
+  opacity: 0;
+  z-index: 1;
+}
+
+.play-btn::after{
+  content: "";
+  position: absolute;
+  border: 10px solid #65caf1;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  animation: bloom2 1.5s linear infinite;
+  opacity: 0;
+  z-index: 1;
+  animation-delay: .4s;
+}
+
+@keyframes bloom1{
+
+0%{
+  transform: scale(0.5);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  transform: scale(1.1);
+}
+
+}
+
+@keyframes bloom2{
+
+  0%{
+    transform: scale(0.5);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.1);
+  }
+  
+  }
+
+/* video Play btn Animation ends */
+
+
+.bg-img2{
+  background-image: url(../images/illustration/testi-bg-1-1.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+/* owl carousal start */
+
+.carousal_img{
+  width: 350px;
+  height: 150px;
+}
+
+.carousel_figure_star i{
+  color: goldenrod;
+}
+
+.bg_leanear{
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,-0.4));
+}
+
+
+/* Home Section Ends */
+
+
+
+/* Services Section Start */
+
+.services_page{
+  background-image: url(../images/illustration/inner-banner-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services_header{
+  padding: 15px 80px ;
+  text-align: center;
+  background: radial-gradient(circle at 12.3% 19.3%, rgba(85, 88, 218,0.9) 0%, rgba(95, 209, 249,0.6) 100.2%);
+}
+
+/* Services Section Ends */
+
+
+.about_bg_color{
+  background-color: #f0f1f5;
+}
+
+.contact_div{
+ box-shadow:  52px 58px 8px -5px #c9e7eb;
+ border: 1px groove rgb(187, 183, 183);
+}
+
+
+
+
+
+/* footer Content style */
+
+
+.underline_animation {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+.underline_animation:hover {
+  color: aqua;
+  right: 0;
+  text-decoration: none;
+}
+
+.underline_animation:hover:after {
+  border-color: aqua;
+  right: 0;
+}
+
+.underline_animation:after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  
+  transition: right .4s cubic-bezier(0,.5,0,1),
+              border-color .4s ease-out;
+}
+
+.underline_animation:hover:after {
+right: 0;
+}
+
+/* footer Content style */
+
+
+
+
+
+
+

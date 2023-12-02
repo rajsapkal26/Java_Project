@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+
+@charset "utf-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+  --color-1:rgb(109, 169, 237);
+}
+
+
+.section{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container_1{
+border-radius: 10px;
+padding: 30px;
+background-color: transparent;
+box-shadow: 0px 0px 15px 5px var(--color-1);
+}
+
+.log_out_btn{
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+
+
+
+
+ 
+
+
